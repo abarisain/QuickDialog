@@ -24,7 +24,7 @@
         [self createSubviews];
 		self.selectionStyle = UITableViewCellSelectionStyleNone;
         _numberFormatter = [[NSNumberFormatter alloc] init];
-        [_numberFormatter setNumberStyle:NSNumberFormatterDecimalStyle];
+        [_numberFormatter setNumberStyle:NSNumberFormatterNoStyle];
     };
     return self;
 }
