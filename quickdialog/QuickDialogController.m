@@ -66,7 +66,7 @@
 }
 
 - (void)loadView {
-    [super loadView];
+    //[super loadView];
     self.quickDialogTableView = [[QuickDialogTableView alloc] initWithController:self];
 }
 
