@@ -33,6 +33,7 @@
 @property (nonatomic, strong) NSString *placeholder;
 @property (nonatomic, strong) NSString *prefix;
 @property (nonatomic, strong) NSString *suffix;
+@property (nonatomic) Class cellClass;
 @property (atomic, assign) int maxLength;
 @property (assign) BOOL hiddenToolbar;
 

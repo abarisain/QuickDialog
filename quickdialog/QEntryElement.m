@@ -39,6 +39,7 @@
         self.enablesReturnKeyAutomatically = NO;
         self.secureTextEntry = NO;
         self.maxLength = 0;
+        self.cellClass = [QEntryTableViewCell class];
     }
     return self;
 }
@@ -57,7 +58,7 @@
 
     QEntryTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"QuickformEntryElement"];
     if (cell==nil){
-        cell = [[QEntryTableViewCell alloc] init];
+        cell = [[[self cellClass] alloc] init];
     }
 
     [cell applyAppearanceForElement:self];

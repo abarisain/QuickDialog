@@ -41,6 +41,8 @@
 
 - (UIToolbar *)createActionBar;
 
+- (void)createTextField;
+
 - (void)createSubviews;
 
 - (CGRect)calculateFrameForEntryElement;

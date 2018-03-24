@@ -44,8 +44,12 @@
 	return actionBar;
 }
 
-- (void)createSubviews {
+- (void)createTextField {
     _textField = [[QTextField alloc] init];
+}
+
+- (void)createSubviews {
+    [self createTextField];
     _textField.contentVerticalAlignment = UIControlContentVerticalAlignmentFill;
     _textField.borderStyle = UITextBorderStyleNone;
     _textField.delegate = self;
