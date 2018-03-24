@@ -116,8 +116,12 @@
     _entryElement = element;
     _textField.text = _entryElement.textValue;
     _textField.placeholder = _entryElement.placeholder;
-    _textField.prefix = _entryElement.prefix;
-    _textField.suffix = _entryElement.suffix;
+    if ([_textField respondsToSelector:@selector(setPrefix:)]) {
+        [(id)_textField setPrefix:_entryElement.prefix];
+    }
+    if ([_textField respondsToSelector:@selector(setSuffix:)]) {
+        [(id)_textField setSuffix:_entryElement.suffix];
+    }
 
     _textField.autocapitalizationType = _entryElement.autocapitalizationType;
     _textField.autocorrectionType = _entryElement.autocorrectionType;
