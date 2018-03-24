@@ -1,5 +1,6 @@
 #import <Foundation/Foundation.h>
 
+#import "QSection.h"
 
 @interface QAppearance : NSObject<NSCopying>
 
